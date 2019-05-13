@@ -1,0 +1,15 @@
+<!--<h1>Chat App</h1>-->
+<h1>Reimbursement App</h1>
+
+<div *ngIf="!currentUser" id="container" >
+  <nav>
+    <div routerLink="login">Employee Login</div>
+    <div routerLink="login2">Finance Manager Login</div>
+  </nav>
+</div>
+  <div>
+    <!-- router-outlet acts as a placeholder to render
+      the active component -->
+    <router-outlet></router-outlet>
+</div>
+
